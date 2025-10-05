@@ -39,14 +39,17 @@
         alert ("vitoria");
 
       } 
+      
       else if (tentativas === 0) {
         alert (`Fim de jogo! O número era ${numeroSecreto}`);
         alert ("derrota");
       } 
+
       else if (valor > numeroSecreto) {
         mensagem.textContent = "Tente um número menor";
         mensagem.className = "mensagem";
       } 
+
       else {
         mensagem.textContent = "Tente um número maior";
         mensagem.className = "mensagem";
@@ -55,7 +58,9 @@
       tentativasRestantes.textContent = `Tentativas restantes: ${tentativas}`;
       entrada.value = "";
       entrada.focus();
+
     }
+
   </script>
 </body>
 </html>
